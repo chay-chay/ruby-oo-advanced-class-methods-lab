@@ -5,7 +5,7 @@ class Song
     @@all
   end
   def save
-    self.class.all << self
+    @@all << self
   end
   def self.create
     song = self.new # creates vari. song, assigns to new instance
@@ -58,4 +58,4 @@ class Song
   def self.destroy_all
     @@all.clear
   end
-end
+end 
