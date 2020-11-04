@@ -5,7 +5,7 @@ class Song
     @@all
   end
   def save
-    self.class.all << self
+    @@all << self #Sanme thins with self.class.all
   end
   def self.create
     song = self.new # creates vari. song, assigns to new instance
@@ -56,6 +56,6 @@ class Song
     song
   end
   def self.destroy_all
-    @@all.clear
+    self.all.clear #@@all.clear
   end
-end
+end 
